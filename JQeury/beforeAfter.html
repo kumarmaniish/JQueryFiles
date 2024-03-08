@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("img").before("<b>Hello</b>");
+        });
+
+        $("#btn2").click(function(){
+            $("img").after("<i>kyaa haal hai</i>");
+        });
+    });
+</script>
+<body>
+    <img src="Black Yellow Aesthetic Samurai Desktop Wallpaper (1).png" alt="Jquery" style="height: 200px; width: 200px; justify-content: center; display: block; margin: 2em; border-radius: 1em; background-color: rgb(39, 53, 105);">
+<br><br>
+    <button id="btn1" style="display:inline-block; border-radius: 10em; font-size: large; color: rgb(119, 31, 91);">Before Insert</button>
+    <button id="btn2" style="display: inline-block; border-radius: 10em; font-size: large; color: rgb(119, 31, 91);">After Insert</button>
+</body>
+</html>
